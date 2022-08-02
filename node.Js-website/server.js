@@ -1,7 +1,7 @@
 // usage
 // node server.js
 
-process.title = 'node-website-template';
+process.title = 'node-website';
 
 // core module
 var http = require('http');
@@ -13,7 +13,7 @@ var router = require('routes')();
 
 var environment = process.env.NODE_ENV || 'development';
 var config = require('./config/' + environment + '.js');
-var templarOptions = { engine: config.engine, folder: config.templates };
+var templarOptions = { engine: config.engine, folder: config };
 
 Templar.loadFolder(config.templates);
 
