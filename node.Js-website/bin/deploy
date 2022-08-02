@@ -4,7 +4,6 @@
 # deploy(1) - Minimalistic shell script to deploy Git repositories.
 # Released under the MIT License.
 #
-# https://github.com/visionmedia/deploy
 #
 
 VERSION="0.6.0"
